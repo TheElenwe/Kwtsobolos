@@ -1,7 +1,7 @@
-let prompt = require('prompt-sync')({sigint: true});
- let days_worked = prompt("Days worked:")
+let readlineSync = require('readline-sync');
+ let days_worked = readlineSync.question("Days worked:")
  
- days_worked = parseFloat(days_worked*30);
+ days_worked = (days_worked*30);
 
 let ps4=200;
 let Samsung_phone=900;
